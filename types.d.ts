@@ -14,3 +14,15 @@ export interface NavbarStylesProps {
     heroHeading: string;
     heroDText: string;
 }
+
+export interface StaggerContainerProps {
+    staggerChildren?: any;
+    delayChildren?: any;
+}
+
+export interface slideInProps {
+    direction: string;
+    type: string; 
+    delay: string; 
+    duration: string;
+}
