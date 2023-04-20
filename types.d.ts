@@ -23,6 +23,6 @@ export interface StaggerContainerProps {
 export interface slideInProps {
     direction: string;
     type: string; 
-    delay: string; 
-    duration: string;
+    delay: number; 
+    duration: number;
 }

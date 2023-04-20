@@ -1,7 +1,20 @@
 import search from './search.svg';
 import menu from './menu.svg';
+import reddit from './reddit.svg';
+import discort from './discort.svg';
+import twitter from './twitter.svg';
+import instagram from './instagram.svg';
+
+import cover from './cover.png';
+import stamp from './stamp.png';
 
 export {
     search,
-    menu
+    menu,
+    cover,
+    stamp,
+    reddit,
+    discort,
+    twitter,
+    instagram
 };

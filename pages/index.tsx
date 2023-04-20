@@ -6,6 +6,24 @@ export default function Home() {
     <div className="bg-primary-black overflow-hidden" >
       <Navbar/>
       <Hero/>
+      <div>
+        ksjdhcks
+      </div>
+      <div>
+        ksjdhcks
+      </div>
+      <div>
+        ksjdhcks
+      </div>
+      <div>
+        ksjdhcks
+      </div>
+      <div>
+        ksjdhcks
+      </div>
+      <div>
+        ksjdhcks
+      </div>
     </div>
   )
 }
