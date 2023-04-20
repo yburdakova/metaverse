@@ -1,29 +1,15 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
+
 export default function Home() {
   return (
-    <div className="bg-primary-black overflow-hidden" >
-      <Navbar/>
+    <div className="overflow-hidden bg-primary-black" >
+      <Navbar/>    
       <Hero/>
-      <div>
-        ksjdhcks
-      </div>
-      <div>
-        ksjdhcks
-      </div>
-      <div>
-        ksjdhcks
-      </div>
-      <div>
-        ksjdhcks
-      </div>
-      <div>
-        ksjdhcks
-      </div>
-      <div>
-        ksjdhcks
-      </div>
+      <About/>
+      
     </div>
   )
 }
