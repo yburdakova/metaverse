@@ -1,10 +1,9 @@
 'use client';
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 import Image from "next/image";
 import Link from 'next/link';
 
-import styles from '@/styles/index.js';
 import { slideIn, staggerContainer , textVariant} from '../utils/motion';
 import { cover, stamp, reddit, discort, twitter, instagram} from '@/public';
 import useWindowSizes from '../hooks/useWindowSizes.js'
@@ -15,15 +14,14 @@ const Hero = (staggerContainer:any) => {
     const windowWidth = useWindowSizes().width || 0;
     console.log(windowWidth);
     
-    
     return (
-    <section className={`${styles.yPaddings} sm:pl-16 pl-6` }>
+    <section className={`sm:py-16 xs:py-8 py-12 sm:pl-16 pl-6` }>
         <motion.div
             variants={staggerContainer}
             initial="hidden"
             whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
-            className={`${styles.innerWidth} mx-auto flex flex-col`}
+            viewport={{ once: true, amount: 0.25 }}
+            className={`2xl:max-w-[1280px] w-full mx-auto flex flex-col`}
         >
             <div className="flex lg:justify-between justify-center mx-[40px] mt-[100px] xl:flex-row-reverse flex-col">
             <motion.div 
@@ -47,20 +45,19 @@ const Hero = (staggerContainer:any) => {
                 </motion.div>
                 <div className='grow'>
                     <div className="relative z-10 flex flex-col items-center justify-center">
-                        <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
+                        <motion.h1 variants={textVariant(1.1)} className='font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white'>
                         Metaverse
                         </motion.h1>
                         <motion.div
                         variants={textVariant(1.2)}
                         className="flex flex-row items-center justify-center"
                         >
-                        <h1 className={styles.heroHeading}>Ma</h1>
-                        <div className={styles.heroDText} />
-                        <h1 className={styles.heroHeading}>Ness</h1>
+                        <h1 className='font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white'>Ma</h1>
+                        <div className='md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]' />
+                        <h1 className='font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white'>Ness</h1>
                         </motion.div>
                     </div>
                 </div>
-                
             </div>
 
             <motion.div

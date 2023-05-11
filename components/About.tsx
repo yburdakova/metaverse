@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import styles from '@/styles/index.js';
 import { fadeIn, staggerContainer } from '../utils/motion';
 import { TypingText } from './CustomTexts';
 
@@ -10,14 +9,14 @@ import { arrowdown } from '@/public';
 
 const About = (staggerContainer:any) => {
     return (
-        <section className={`${styles.paddings} relative z-10 mx-[40px]` }>
+        <section className='sm:p-16 xs:p-8 px-6 py-12 relative z-10 mx-[100px]'>
             <div className="z-0 gradient-02"/>
             <motion.div 
                 variants={staggerContainer}
                 initial='hidden'
                 whileInView='show'
-                viewport={{once:false, amount:0.25}}
-                className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
+                viewport={{once: true, amount:0.25}}
+                className='2xl:max-w-[1280px] w-full mx-auto flex justify-center items-center flex-col'
             >
                 <TypingText
                     title="| About Metaverse"
@@ -25,7 +24,7 @@ const About = (staggerContainer:any) => {
                 />
                 <motion.p
                     variants={fadeIn('up', 'tween', 0.2, 1)}
-                    className="mt-[8px] font-normal md:text-[28px] text-[20px] text-center text-secondary-white"
+                    className='mt-[8px] font-normal md:text-[28px] text-[20px] text-center text-secondary-white'
                 >
                     <span className="font-extrabold text-white">Metaverse</span> is a new
                     thing in the future, where you can enjoy the virtual world by feeling

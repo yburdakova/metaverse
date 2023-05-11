@@ -1,4 +1,13 @@
+import React , { Dispatch, SetStateAction } from "react";
 
+export interface  ExploreCardProps {
+    id?: any;
+    imgUrl?: string | StaticImageData;
+    title?: string;
+    active?:string;
+    index?: any;
+    handleClick: Dispatch<SetStateAction<string>>;
+}
 export interface NavbarStylesProps {
     innerWidth: string;
     interWidth: string;
@@ -16,8 +25,9 @@ export interface NavbarStylesProps {
 }
 
 export interface StaggerContainerProps {
-    staggerChildren?: any;
-    delayChildren?: any;
+    staggerChildren: any;
+    delayChildren: any;
+
 }
 
 export interface slideInProps {
